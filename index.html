@@ -118,7 +118,6 @@
 
   /* ─── HERO ─── */
   #hero {
-    min-height: 580px;
     margin-top: 124px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,11 +128,9 @@
   .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: clamp(30px, 5vw, 60px) clamp(20px, 5vw, 80px) 0;
+    padding: clamp(30px, 5vw, 60px) clamp(20px, 5vw, 80px);
     position: relative;
     z-index: 2;
-    overflow: hidden;
   }
 
   .hero-tag {
@@ -182,6 +179,7 @@
     gap: 16px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
 
   .btn-primary {
@@ -264,9 +262,7 @@
     display: flex;
     border-top: 1px solid rgba(174,174,178,0.1);
     margin-top: auto;
-    margin-left: calc(-1 * clamp(20px, 5vw, 80px));
-    margin-right: calc(-1 * clamp(20px, 5vw, 80px));
-    margin-bottom: 0;
+    padding-top: 0;
   }
   .hero-stat {
     flex: 1;
@@ -854,6 +850,20 @@
       <a href="#contact" class="btn-primary">Get Free Estimate</a>
       <a href="tel:5551234567" class="btn-ghost">☎ (555) 123-4567</a>
     </div>
+    <div class="hero-stat-strip">
+      <div class="hero-stat">
+        <div class="num">38+</div>
+        <div class="lbl">Years Active</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">12K</div>
+        <div class="lbl">Jobs Done</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">4.9★</div>
+        <div class="lbl">Avg Rating</div>
+      </div>
+    </div>
   </div>
   <div class="hero-right">
     <div class="pipe-graphic">
@@ -881,20 +891,6 @@
     <div class="hero-badge">
       <span class="badge-big">24/7</span>
       <span class="badge-sm">Emergency<br>Service</span>
-    </div>
-  </div>
-  <div class="hero-stat-strip">
-    <div class="hero-stat">
-      <div class="num">38+</div>
-      <div class="lbl">Years Active</div>
-    </div>
-    <div class="hero-stat">
-      <div class="num">12K</div>
-      <div class="lbl">Jobs Done</div>
-    </div>
-    <div class="hero-stat">
-      <div class="num">4.9★</div>
-      <div class="lbl">Avg Rating</div>
     </div>
   </div>
 </section>
