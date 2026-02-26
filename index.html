@@ -118,7 +118,7 @@
 
   /* ─── HERO ─── */
   #hero {
-    height: 560px;
+    min-height: 580px;
     margin-top: 124px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,10 +129,11 @@
   .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: clamp(30px, 5vw, 80px) clamp(20px, 5vw, 80px);
+    justify-content: flex-start;
+    padding: clamp(30px, 5vw, 60px) clamp(20px, 5vw, 80px) 0;
     position: relative;
     z-index: 2;
+    overflow: hidden;
   }
 
   .hero-tag {
@@ -260,10 +261,12 @@
   .hero-badge .badge-sm { font-size: 0.65rem; letter-spacing: 2px; font-family: 'DM Sans', sans-serif; }
 
   .hero-stat-strip {
-    position: absolute;
-    bottom: 0; left: 0; right: 50%;
     display: flex;
     border-top: 1px solid rgba(174,174,178,0.1);
+    margin-top: auto;
+    margin-left: calc(-1 * clamp(20px, 5vw, 80px));
+    margin-right: calc(-1 * clamp(20px, 5vw, 80px));
+    margin-bottom: 0;
   }
   .hero-stat {
     flex: 1;
