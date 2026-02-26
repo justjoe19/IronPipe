@@ -119,6 +119,7 @@
   /* ─── HERO ─── */
   #hero {
     min-height: 100vh;
+    max-height: 860px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 76px;
@@ -1046,7 +1047,7 @@
         <span class="contact-icon">✉️</span>
         <div>
           <h4>Email</h4>
-          <a href="mailto:hello@ironpipeplumbing.com">hello@ironpipeplumbing.com</a>
+          <a href="/cdn-cgi/l/email-protection#e68e838a8a89a68f948988968f9683968a938b848f8881c885898b"><span class="__cf_email__" data-cfemail="5b333e3737341b322934352b322b3e2b372e363932353c75383436">[email&#160;protected]</span></a>
         </div>
       </div>
       <div class="contact-item">
@@ -1115,7 +1116,7 @@
   </ul>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Mobile menu
   function toggleMenu() {
     document.getElementById('mobileMenu').classList.toggle('open');
@@ -1144,15 +1145,4 @@
   // Form submit
   function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = 'Request Sent ✓';
-    btn.style.background = '#27ae60';
-    setTimeout(() => {
-      btn.textContent = 'Send Request';
-      btn.style.background = '';
-      e.target.reset();
-    }, 3000);
-  }
-</script>
-</body>
-</html>
+    const btn = e.target.querySelector('button[type=
